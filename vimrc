@@ -11,13 +11,9 @@ set smartindent
 set wildmode=longest,list
 set cc=80
 set ttyfast
-set spell
+set nospell
 set clipboard=unnamedplus
 
 filetype plugin indent on
-filetype plugin on
 syntax on
-
-highlight clear
-syntax reset
 
