@@ -17,3 +17,10 @@ set clipboard=unnamedplus
 filetype plugin indent on
 syntax on
 
+augroup markdown
+  autocmd!
+  autocmd FileType markdown setlocal wrap linebreak breakindent
+  autocmd FileType markdown setlocal cc=
+  autocmd FileType markdown nnoremap <buffer> j gj
+  autocmd FileType markdown nnoremap <buffer> k gk
+augroup END
